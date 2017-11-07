@@ -1,0 +1,74 @@
+{ditta}
+	autonomi
+		_cessati
+	collaboratori
+		_cessati
+	comunicazioni
+	conteggi
+	cover-fax-std
+	Dati bilancio - IRAP - TFR
+		anno {anno}
+		anni precedenti
+	dipendenti
+		_cessati
+		orario lavoro
+			old
+	doc_ditta
+		Deleghe-mandati
+		soci
+	enti
+		ASL
+			Registro infortuni
+		DPL
+		INAIL
+			autoliquidazione
+				anno {anno}
+				anni precedenti
+			iscrizione-variazioni
+		INPS
+			ArtCom - F24
+				anno {anno}
+				anni precedenti
+			avvisi bonari
+				pagati
+			Deleghe ArtCom
+			DURC
+			iscrizione-variazioni
+			MAV
+				anno {anno}
+					trim 1
+					trim 2
+					trim 3
+					trim 4
+				anni precedenti
+			note rettifica
+			Report
+		Sindacati
+			anno {anno}
+			anni precedenti
+	fiscale
+		Detrazioni
+			anno {anno}
+			anni precedenti
+		CUD
+			anno {anno}
+			anni precedenti
+		Mod 770
+			anno {anno}
+				F24 pagati
+			anni precedenti
+	fondi
+		casse assistenza
+			anno {anno}
+			anni precedenti
+		fondi previdenza
+	LUL
+		cedolini
+			anno {anno}
+			anni precedenti
+	notule-fatture
+	presenze
+		anno {anno}
+		anni precedenti
+	Tirocinio - Stage
+	varie

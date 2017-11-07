@@ -1,12 +1,97 @@
 dir: "{ditta}"
 sub:
-  - dir: Dati bilancio - IRAP - TFR
+  - dir: autonomi
     sub:
-      - dir: bilancio {anno}
+      - dir: _cessati
+
+  - dir: collaboratori
+    sub:
+      - dir: _cessati
+
+  - dir: comunicazioni
+  - dir: conteggi
+  - dir: cover-fax-std
+
+  - dir: Dati bilancio - IRAP - TFR
+    sub: &anni
+      - dir: anno {anno}
       - dir: anni precedenti
+
+  - dir: dipendenti
+    sub:
+      - dir: _cessati
+      - dir: orario lavoro
+        sub:
+          - dir: old
+
+  - dir: doc_ditta
+    sub:
+      - dir: Deleghe-mandati
+      - dir: soci
+
+  - dir: enti
+    sub:
+      - dir: ASL
+        sub:
+          - dir: Registro infortuni
+      - dir: DPL
+      - dir: INAIL
+        sub:
+          - dir: autoliquidazione
+            sub: *anni
+          - dir: iscrizione-variazioni
+      - dir: INPS
+        sub:
+          - dir: ArtCom - F24
+            sub: *anni
+          - dir: avvisi bonari
+            sub:
+              - dir: pagati
+          - dir: Deleghe ArtCom
+          - dir: DURC
+          - dir: iscrizione-variazioni
+          - dir: MAV
+            sub:
+              - dir: anno {anno}
+                sub:
+                  - dir: trim 1
+                  - dir: trim 2
+                  - dir: trim 3
+                  - dir: trim 4
+              - dir: anni precedenti
+          - dir: note rettifica
+          - dir: Report
+      - dir: Sindacati
+        sub: *anni
+
+  - dir: fiscale
+    sub:
+      - dir: Detrazioni
+        sub: *anni
+      - dir: CUD
+        sub: *anni
+      - dir: Mod 770
+        sub:
+          - dir: anno {anno}
+            sub:
+              - dir: F24 pagati
+          - dir: anni precedenti
+
+  - dir: fondi
+    sub:
+      - dir: casse assistenza
+        sub: *anni
+      - dir: fondi previdenza
+
   - dir: LUL
     sub:
       - dir: cedolini
-        sub:
-          - dir: anno {anno}
-          - dir: anni precedenti
+        sub: *anni
+
+  - dir: notule-fatture
+
+  - dir: presenze
+    sub: *anni
+
+  - dir: Tirocinio - Stage
+  - dir: varie
