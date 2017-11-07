@@ -1,0 +1,8 @@
+dir: default
+sub:
+  - dir: folder A
+  - dir: folder B
+  - dir: year {year}
+    sub:
+      - dir: template 1
+      - dir: template 2
