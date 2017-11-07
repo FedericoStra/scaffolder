@@ -1,0 +1,12 @@
+dir: "{ditta}"
+sub:
+  - dir: Dati bilancio - IRAP - TFR
+    sub:
+      - dir: bilancio {anno}
+      - dir: anni precedenti
+  - dir: LUL
+    sub:
+      - dir: cedolini
+        sub:
+          - dir: anno {anno}
+          - dir: anni precedenti
