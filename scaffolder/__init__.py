@@ -13,10 +13,11 @@ class Directory:
         for subdir in self.subdirs:
             subdir.absolute(self.path)
     def mkdir(self, **kwargs):
+        real_path = self.path.format(**kwargs)
         try:
-            os.mkdir(self.path.format(**kwargs))
+            os.mkdir(real_path)
         except FileExistsError as e:
-            if not os.path.isdir(self.path):
+            if not os.path.isdir(real_path):
                 raise
     def mktree(self, **kwargs):
         self.mkdir(**kwargs)
