@@ -7,7 +7,3 @@ def main():
     tree = load_template_yaml("templates/default.yaml")
     tree.absolute(os.curdir)
     tree.mktree(year=2017)
-
-
-if __name__ == '__main__':
-    main()
