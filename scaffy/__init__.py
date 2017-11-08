@@ -81,10 +81,12 @@ def make_argument_parser():
         epilog="Copyright 2017 Federico Stra")
     parser.add_argument('-i', '--interactive', action='store_true',
         help="run in interactive mode")
-    parser.add_argument('-v', '--verbose', action='count', default=0,
-        help="be more verbose (cumulative up to 2 levels)")
-    parser.add_argument('-q', '--quiet', action='store_true',
+    group = parser.add_mutually_exclusive_group()
+    group.add_argument('-q', '--quiet', action='store_true',
         help="be quiet (do not report errors, but infer them from return code)")
+    group.add_argument('-v', '--verbose', action='count', default=0,
+        help="be more verbose (cumulative up to 2 levels)")
+
     subparsers = parser.add_subparsers(title="available commands", dest='command')
 
     sub_create = subparsers.add_parser('create', aliases=['mk'],
