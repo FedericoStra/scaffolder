@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='scaffolder',
+    name='scaffy',
     version='0.0.0',
     description='Simple creator of directory structures',
     long_description='Read the README',
@@ -14,7 +14,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'scaffolder=scaffolder:main',
+            'scaffy=scaffy:main',
         ],
     },
     )

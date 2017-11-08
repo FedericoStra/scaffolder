@@ -21,7 +21,7 @@ def main():
     print(namespace)
 
     config = ConfigParser(interpolation=ExtendedInterpolation())
-    config.read("scaffolder.cfg")
+    config.read("scaffy.cfg")
 
     template_name = config['DEFAULT']['template']
     template_file = config[template_name]['source']
