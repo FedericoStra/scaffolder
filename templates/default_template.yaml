@@ -1,4 +1,4 @@
-dir: default
+dir: default_template
 sub:
   - dir: folder A
   - dir: folder B
