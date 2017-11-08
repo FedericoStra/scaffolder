@@ -8,7 +8,7 @@ setup(
     author='Federico Stra',
     author_email='stra.federico@gmail.com',
     packages=find_packages(),
-    install_requires=['PyYAML'],
+    install_requires=['appdirs>=1.4.3', 'PyYAML'],
     extras_require={
         'test': ['coverage']
     },
