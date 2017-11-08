@@ -3,12 +3,14 @@ from setuptools import setup, find_packages
 setup(
     name='scaffy',
     version='0.0.0',
-    description='Simple creator of directory structures',
+    description='Simple but powerful creator of directory structures based on templates',
     long_description='Read the README',
     author='Federico Stra',
     author_email='stra.federico@gmail.com',
     packages=find_packages(),
-    install_requires=['appdirs>=1.4.3', 'PyYAML'],
+    install_requires=[
+        'appdirs>=1.4.3',
+        'PyYAML'],
     extras_require={
         'test': ['coverage']
     },
@@ -17,4 +19,4 @@ setup(
             'scaffy=scaffy:main',
         ],
     },
-    )
+)
